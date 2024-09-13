@@ -6,88 +6,164 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #fff;
+    font-family: Arial, sans-serif; /* Default font */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    overflow-x: hidden;
     line-height: 1.6;
 }
 
-/* Header */
-.main-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
+h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+    text-transform: uppercase; /* Similar to Peggy's site typography */
+    letter-spacing: 0.05em;
 }
 
-/* Hero Section */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+}
+
+/* Full-Screen Hero Section with Grey Background */
 .hero {
     height: 100vh;
-    background: #333;
-    color: white;
+    background-color: #444; /* Grey color as a placeholder for images */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.hero-content h1 {
+.hero h1 {
+    font-size: 5rem;
     color: #fff;
-    font-size: 4rem;
+    letter-spacing: 0.1em;
 }
 
-.hero-content p {
+.hero p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+/* Fixed Navigation Bar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85); /* Slight transparency */
+    padding: 20px 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
     color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #f7b500; /* Yellow color similar to Peggy's branding */
+}
+
+/* Section Layouts with Grey Background */
+.section {
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #444; /* Grey placeholder color */
+}
+
+.section-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.section-light {
+    background-color: #444; /* Grey placeholder */
+    color: #fff;
+}
+
+.section h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section p {
     font-size: 1.5rem;
 }
 
-/* About Section */
-.about-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-.about-section h2 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-}
-
-/* Music Section */
-.music-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.music-section h2 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-}
-
 /* Footer */
-.main-footer {
-    text-align: center;
+footer {
+    background-color: #111;
     padding: 20px;
-    background-color: #333;
+    text-align: center;
     color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Button Styles */
+button {
+    background-color: #f7b500; /* Yellow color */
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #f7b500;
+}
+
+/* Smooth scrolling for anchors */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1.2rem;
+    }
 }
