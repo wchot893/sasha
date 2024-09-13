@@ -1,0 +1,61 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Default font */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+}
+
+/* Full-Screen Hero Section with Grey Background */
+.hero {
+    height: 100vh;
+    background-color: #444; /* Grey placeholder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+/* Fixed Navigation Bar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85); /* Slight transparency */
+    padding: 20px 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex
